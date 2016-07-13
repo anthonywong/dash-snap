@@ -1,4 +1,4 @@
-name: dash
+name: dash-shell
 version: "0.5.9"
 summary: POSIX-compliant shell
 description: |
