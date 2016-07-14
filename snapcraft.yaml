@@ -20,5 +20,3 @@ parts:
     build-packages:
       - po-debconf
       - sharutils
-    stage-packages:
-      - debianutils
