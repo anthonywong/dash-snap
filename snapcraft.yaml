@@ -1,5 +1,5 @@
 name: dash-shell
-version: "0.5.9.1"
+version: "0.5.10.2"
 summary: POSIX-compliant shell
 description: |
  The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
@@ -7,6 +7,9 @@ description: |
  Since it executes scripts faster than bash, and has fewer library
  dependencies (making it more robust against software or hardware
  failures), it is used as the default system shell on Debian systems.
+confinement: strict
+grade: stable
+icon: dash.png
 
 apps:
   dash:
@@ -15,7 +18,7 @@ apps:
 
 parts:
   dash:
-    source: http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.9.1.tar.gz
+    source: http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.10.2.tar.gz
     plugin: autotools
     build-packages:
       - po-debconf
